@@ -1,0 +1,6 @@
+import "tilePos.proto";
+
+message LoginComplete {
+	required TilePos tilePos = 1;
+	required uint32 id = 2;
+}
