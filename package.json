@@ -1,0 +1,49 @@
+{
+	"name": "Magnet",
+	"private": true,
+	"devDependencies": {
+		"browserify": "latest",
+		"jshint": "latest"
+	},
+	"watch": {
+		"build-client": {
+			"patterns": [
+				"client/src",
+				"shared",
+				"protobuff"
+			]
+		},
+		"buildrun-server": {
+			"patterns": [
+				"server/src",
+				"shared",
+				"protobuff/"
+			]
+		},
+		"lint-shared": {
+			"patterns": [
+				"shared"
+			]
+		}
+	},
+	"scripts": {
+		"lint-client": "jshint client/src/*.js",
+		"lint-server": "jshint server/src/*.js",
+		"lint-shared": "jshint shared/*.js",
+		"run-server": "node server/src/main.js",
+		"build-client": "npm run lint-client && make -C client",
+		"build-server": "npm run lint-server && make -C server",
+		"buildrun-server": "npm run build-server && npm run run-server",
+		"watch-client": "npm-watch build-client",
+		"watch-server": "npm-watch buildrun-server",
+		"watch-shared": "npm-watch lint-shared"
+	},
+	"dependencies": {
+		"protobufjs": "latest",
+		"bundle-collapser": "^1.4.0",
+		"jquery": "^3.5.1",
+		"uglify-js": "^3.9.4",
+		"uglifyjs": "^2.4.11",
+		"ws": "^7.3.0"
+	}
+}

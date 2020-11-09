@@ -1,0 +1,92 @@
+
+body {
+	background-color:  #d2d2d2;
+	margin:0;
+}
+
+.smartcenterh {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#pages > div {
+	display: none;
+}
+
+#logo {
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom:30px;
+}
+
+#loginCenter {
+	margin-top: 100px;
+}		
+
+#loginBox {
+	width: 320px;
+	text-align: center;
+	background-color:  #d00000;
+	padding: 30px;
+	border-radius: 3px;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.5);
+}
+
+#loginCenter h1 {
+	margin-bottom: 20px;
+}
+
+#tutorialCanvas {
+	margin-top: 30px;
+}
+
+#canvas, #score_board {
+	vertical-align: top;
+}
+
+#gamePage {touch-action:none;}
+
+
+#score_board {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	overflow: hidden;
+  	white-space: nowrap;
+
+	list-style: none;
+
+	padding: 5px;
+	width: 200px;
+	margin:0;
+	margin-top:15px;	
+	
+	background-color: rgba(0, 0, 0, 0.3);
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+		
+input[type="text"] {
+	padding: 8px;
+	border-radius: 3px;
+	border: 0;
+	box-shadow:  2px 2px 3px rgba(0,0,0,0.5);
+}
+
+button {
+	padding: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+	border: 0;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}

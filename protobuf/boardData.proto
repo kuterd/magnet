@@ -1,0 +1,24 @@
+
+message BoardData {
+	message ExpandingTile {
+		required uint32 life = 1;
+		required TilePos to = 2;
+		required TilePos from = 3;
+		required uint32 id = 4; 
+	}
+	
+	message Tile {
+		required uint32 id = 1;	
+		required uint32 status = 2;
+	}
+
+	message LeaderBoardEntry {
+		required uint32 id = 1;
+		required string username = 2;
+	}
+
+	repeated Tile tiles = 1;
+	repeated ExpandingTile expTiles = 2;
+	repeated LeaderBoardEntry leaderBoard = 3;
+	
+}

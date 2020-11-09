@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta name="viewport" content="initial-scale=0.75, maximum-scale=0.75, user-scalable=no" />
+		<script src="client.min.js"></script>
+
+		<link rel="icon" href="favicon.png">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div id="pages">
+			<div id="loginPage">
+				<div id="loginCenter" class="smartcenter">
+					<div id="logo">Mükemmel bir isim</div>
+					<div id="loginBox" class="smartcenterh">
+						<div>
+							<input type="text" id="username" placeholder="Kullanıcı adı"/>
+							<button id="login">Yardır</button>
+						</div>				
+					</div>
+					<canvas id="tutorialCanvas" class="smartcenterh"></canvas>			
+				</div>
+			</div>
+			<div id="loadingPage"><h1>Yükleniyor...</h1></div>
+			<div id="gamePage">
+				<canvas id="canvas" touch-action="none"></canvas>
+				<ul id="score_board">
+					<li style="font-weight: bold; color:white; font-size: 23px">Liderler tahtası</li>
+				</ul>
+				
+			</div>
+			<div id="connectionErrorPage" style="padding:20px">
+					<h1>Bağlatı hatası :C</h1><a href="javascript:location.reload()">sayfayı yenile</a>
+			</div>		
+		</div>
+	</body>
+
+</html>

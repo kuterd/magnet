@@ -1,0 +1,14 @@
+message Packet {
+	enum Type {
+		LOGIN = 1;
+		LOGIN_COMPLETE = 2;
+		GAME_MOVE = 3;
+		BOARD_DATA = 4;
+		BOARD_UPDATE = 5;
+		GAME_OVER = 6;
+	}
+
+	required Type type = 1;
+	optional bytes data = 2;
+}
+
